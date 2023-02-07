@@ -7,7 +7,13 @@ This is a project part of a course by the company 'Rocketseat'. It is a simple a
 <br>
 
 <p align="center">
-  <img alt="App preview" src="./github/preview.png" width="100%">
+  <img alt="App preview" src="./github/preview-light.png" width="100%">
+</p>
+
+<br>
+
+<p align="center">
+  <img alt="App preview" src="./github/preview-dark.png" width="100%">
 </p>
 
 ## 🚀 Technologies
