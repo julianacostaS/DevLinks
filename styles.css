@@ -30,7 +30,7 @@ body {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover; */
-    /* Intead of four lines of code above, use the short-hand for background styles below. */
+    /* Instead of four lines of code above, use the short-hand for background styles below. */
     background: var(--bg-url) no-repeat top center/cover;
     height: 100vh;
 }
@@ -85,14 +85,21 @@ body * {
     left: 0;
     z-index: 1;
     transform: translateY(-50%);
+    animation: slide-out 0.2s;
 }
 
 
 /* To make the switch go back to initial position when it change to dark mode */
 
+
+/* Apply the animation slide-in */
+
 .light #switch button {
-    right: 0;
-    left: initial;
+    animation: slide-in 0.4s forwards;
+}
+
+#switch button:hover {
+    outline: 8px solid var(--highlight-color);
 }
 
 #switch span {
@@ -166,11 +173,35 @@ footer {
     font-size: 14px;
 }
 
+
+/* Media queries larger devices */
+
 @media (min-width:700px) {
      :root {
         --bg-url: url(./assets/bg-desktop-dark.png);
     }
     .light {
         --bg-url: url(./assets/bg-desktop-light.png);
+    }
+}
+
+
+/* Animation for the swicth button */
+
+@keyframes slide-in {
+    from {
+        left: 0;
+    }
+    to {
+        left: 50%;
+    }
+}
+
+@keyframes slide-out {
+    from {
+        left: 50%;
+    }
+    to {
+        left: 0;
     }
 }
