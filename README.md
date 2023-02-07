@@ -2,7 +2,7 @@
 
 This is a project part of a course by the company 'Rocketseat'. It is a simple application where the user can switch between dark and light profile.
 
-[🔗 Click here to access it]()
+[🔗 Click here to access it](https://julianacostas.github.io/DevLinks/)
 
 <br>
 
